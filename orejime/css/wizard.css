@@ -1,0 +1,295 @@
+/**
+	* CSS Plugin theCrock / Wizard
+	* V.1
+	* @author Cyrille G.
+**/
+:root {
+	--color-1: #6366f1;
+	--color-1-hover: #4338ca;
+	--color-2: #06b6d4;
+	--color-2-hover: #0891b2;
+	--color-3: #C77C29;
+	--color-3-hover: #DC143C;
+	--text-color: #312e81;
+	--status-btn-bg: #f8fafc;
+	--status-btn-bg-hover: #f1f5f9;
+}
+
+body .wizard{
+	background: linear-gradient(to left, var(--color-1), var(--color-2));
+	padding:1em;
+	position: relative;
+	z-index: 1000;
+	max-width:100%;
+}
+.container {
+	margin: 3rem auto;
+	max-width: clamp(80%,auto,90vw);
+	background: white;
+	border-radius: 1rem;
+	padding: 2rem;
+	width:100%;
+}
+.form-input {
+	width: 100%;
+	border: 1px solid #ddd;
+	border-radius: .5rem;
+	box-shadow: inset 0px 1px 2px rgba(0, 0, 0, .1);
+	padding: 1rem;
+	box-sizing: border-box;
+	color: var(--text-color);
+	transition: ease-in-out .3s all;
+}
+.form-input::placeholder {
+	color: #cbd5e1;
+}
+.form-input:focus {
+	outline: none;
+	border-color: var(--color-1);
+}
+.btn:focus-within,
+.form-input:focus-within {
+	box-shadow: #f8fafc 0px 0px 0px 2px, #c7d2fe 0px 0px 0px 6px, #0000 0px 1px 2px 0px;
+}
+textarea.form-input {
+	min-height: 150px;
+}
+.btn {
+	border: 0;
+	background: var(--color-1);
+	padding: 1rem;
+	border-radius: 25px; 
+	color: white;
+	cursor: pointer;
+	height: auto
+}
+.btn[disabled] {
+	opacity: .5;
+	pointer-events: none;
+}
+.btn:hover {
+	background: var(--color-1-hover);
+	transition: ease-in-out .3s all;
+}
+.btn-submit {
+	background-color: var(--color-3)
+}
+.btn-submit:hover {
+	background-color: var(--color-3-hover);
+	color:white;
+}
+.btn.hidden + #next {
+	margin-inline-start: auto;
+}
+.wizard textarea {
+	max-width: 95%;
+	width: 95%;
+	margin: auto;
+	display: block;
+}
+.pagination {
+	margin-top: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between
+}
+.pagination .btn {
+	min-width: 8em;
+	text-align: center;
+	margin: 0 6px;
+}
+#tab-status {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	border-bottom: solid 1px;
+	margin-bottom: 1em;
+	padding: 0 0 0.5em;
+}
+#tab-status span {
+	appearance: none;
+	background: var(--status-btn-bg);
+	border: none;
+	border-radius: 50%;
+	width: 2rem;
+	height: 2rem;
+	margin-right: .5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#tab-status span.active {
+	background-color: var(--color-2);
+	color: white;
+}
+span.tab + span.tab {
+	margin-inline-start: 1em;
+	box-shadow: -1.25em 0 0 -.4em var(--color-2);
+}
+span.tab.active ~ span.tab {
+	box-shadow: -1.25em 0 0 -.4em var(--status-btn-bg );
+}
+.hidden {
+	display: none;
+}
+/* extra */
+.container {
+	display:grid;
+	gap :0 2em ;
+	grid-template-columns: minmax(200px,1fr) 3fr;
+}
+.title-wizard {
+	display:grid;
+	grid-template-rows: auto 1fr auto;
+	color:blue;
+	grid-column:1;
+	grid-row:1/4;
+	text-align:center;
+	border-inline-end:  solid 2px ghostwhite;
+	background:url(../img/grass.png) 100% 100% no-repeat, url(../img/gcyrillus.png).5em .5em / 3em 3em  no-repeat;
+	padding-bottom:3em;
+}
+.idConfig {
+	color: gray;
+	display: flex;
+	gap: 1em;
+	grid-column: 1/-1;
+	justify-content: center;
+	margin:1em -1.35em -1.3em;
+	background:lightskyblue;
+	padding: 1em;
+	border-radius: 0 0 0.5em 0.5em;
+	box-shadow: 0 1px 0 1px #6267F1
+}
+.idConfig a {
+	text-decoration: underline;
+	color:inherit
+}
+.wizard [for="closeWizard"] {
+	border-radius:1em;
+	background:white;
+	box-shadow:1px 1px 3px 1px #333;
+	color:crimson;
+	padding-inline:1em;
+}
+#closeWizard {
+	position:absolute;
+	top:-100vw;
+}
+#closeWizard:checked ~ .wizard {
+	display:none;
+}
+#closeWizard:checked ~ p a.aWizard {
+	display: block;
+}
+.title-wizard img {
+	width: 100px;
+	margin: auto auto 1em;
+}
+.title-wizard h2 {
+	font-size: 1.5em;
+	font-weight: bold;
+	font-variant: small-caps;
+	rotate: -15deg;
+}
+.title-wizard h2::first-line{
+	font-size:1.5em;
+	-webkit-text-stroke: 2px deeppink;
+	color: honeydew;
+}
+.tabpanel {
+	border-bottom: solid 1px silver
+}
+.tabpanel > * {
+	margin: 0 0 0.35em;
+}
+.tabpanel:not(.hidden) {
+	display: grid;
+	min-height: 300px;
+	place-content: center;
+}
+.tabpanel.title:not(.hidden) {
+	background: darkblue;
+	color: white;
+}
+.tabpanel.title h2 {
+	font-size: 2em;
+	rotate: -15deg;
+	color: hotpink;
+	padding-bottom:1.5em;
+}
+.bspan {
+	display: inline-block;
+	height:2.4em;
+	width:4em;
+	font-size: 0.5em;
+	vertical-align:top;
+}
+.bspan.gray {
+	background:#E7E2E7;
+	color:#E7E2E7;
+}
+.bspan.corn {
+	background:#FFFBDE;
+	color:#FFFBDE;
+}
+.bspan.azur{
+	background:#F0FFFF;
+	color:#F0FFFF;
+}
+.bspan.green {
+	background: #ABE0AA;
+	color:#ABE0AA;
+}
+.bspan.red {
+	background:#FEBDC8;
+	color:#FEBDC8;
+}
+.wizard dl sup {
+	display: inline-block;
+	line-height: 1;
+	vertical-align: text-top;
+	vertical-align: -moz-middle-with-baseline;
+	font-style: italic;
+	background:lightcyan;
+	font-weight: bolder;
+	color:gray
+}
+#tabend {
+	background: goldenrod;
+	color: floralwhite;
+	font-size: clamp(1.5rem, 1.5vmax, 30px);
+	text-align: center;
+}
+#tabend h2 {
+	font-size: 4em;
+	font-weight: bolder;
+	color: gold
+}
+#tabend{
+	position: relative;
+} 
+
+#tabend small {
+	position: absolute;
+	color: gray;
+	bottom: 0;
+	right: 0;
+}
+@media (max-width:774px) {	
+	.wizard .container {
+		display:block;
+		overflow: hidden
+	}
+	.title-wizard {
+		display: flex;
+		align-items: center;
+		box-shadow:inset 0 0 30vw #eeea;
+		margin:-1.4em -1.4em 0;
+		padding:0.25em
+	}
+	.wizard .container input,
+	.wizard .container textarea {
+		max-width:80vw;
+	}	
+}

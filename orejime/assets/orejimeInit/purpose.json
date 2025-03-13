@@ -1,0 +1,32 @@
+{
+    "purposes": [
+        {
+            "id": "N\u00e9cessaire",
+            "title": "Cookies Techniques",
+            "description": "Ces cookies n\u00e9cessaires au bon fonctionnement du site ne requiert pas votre consentement. Ils servent \u00e0 valider les formulaires et \u00e0 conserver vos identifiants de connexion si vous \u00eates membre.",
+            "isMandatory": "true"
+        },
+        {
+            "id": "Contextuels",
+            "title": "Contenus Externes",
+            "description": "Contenus contextuels depuis un site tiers. Les sites tiers peuvent suivre votre navigation et d\u00e9poser leurs cookies. Une autorisation est requise.",
+            "purposes": [
+                {
+                    "id": "codepen",
+                    "title": "Codepen",
+                    "description": "Contenus en provenance du site codepen.io. Ce site peut d\u00e9poser des cookies."
+                },
+                {
+                    "id": "Youtube",
+                    "title": "Video YouTube",
+                    "description": "Ce site peut  collect\u00e9es  des donn\u00e9es sur vous ."
+                }
+            ]
+        },
+        {
+            "id": "Google font",
+            "title": "Google font",
+            "description": "En chargeant cette police, Google peut suivre votre navigation via votre IP."
+        }
+    ]
+}

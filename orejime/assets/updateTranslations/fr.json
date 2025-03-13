@@ -1,0 +1,48 @@
+{
+    "banner": {
+        "title": "bandeau",
+        "description": "Nous collectons et traitons vos informations personnelles dans le but suivant : {purposes}.\r\nPour en savoir plus, merci de lire notre {privacyPolicy}.\r\n",
+        "privacyPolicyLabel": "politique de confidentialit\u00e9",
+        "accept": "Accepter",
+        "acceptTitle": "Accepter tous les cookies",
+        "decline": "Refuser",
+        "declineTitle": "Refuser tous les cookies optionnels",
+        "configure": "En savoir plus",
+        "configureTitle": "Choisir les cookies"
+    },
+    "modal": {
+        "title": "Les informations que nous collectons",
+        "description": "Ici, vous pouvez voir et personnaliser les informations que nous collectons sur vous.\r\nPour en savoir plus, merci de lire notre {privacyPolicy}.\r\n",
+        "privacyPolicyLabel": "politique de confidentialit\u00e9",
+        "close": "Fermer",
+        "closeTitle": "Fermer les pr\u00e9f\u00e9rences",
+        "globalPreferences": "Pr\u00e9f\u00e9rences pour tous les services",
+        "acceptAll": "Tout accepter",
+        "declineAll": "Tout refuser",
+        "save": "Sauvegarder",
+        "saveTitle": "Sauvegarder ma configuration sur les informations collect\u00e9es"
+    },
+    "contextual": {
+        "title": "\"{purpose}\" est d\u00e9sactiv\u00e9",
+        "description": "Autorisez le d\u00e9p\u00f4t de cookies pour acc\u00e8der \u00e0 cette fonctionnalit\u00e9.",
+        "accept": "Autoriser",
+        "accepted": "\"{purpose}\" est maintenant autoris\u00e9."
+    },
+    "purpose": {
+        "mandatory": "toujours requis",
+        "mandatoryTitle": "Cette application est toujours requise",
+        "exempt": "opt-out",
+        "exemptTitle": "Cette application est charg\u00e9e par d\u00e9faut (mais vous pouvez la d\u00e9sactiver)",
+        "showMore": "Voir plus de d\u00e9tails",
+        "accept": "Accepter",
+        "decline": "Refuser",
+        "enabled": "activ\u00e9",
+        "disabled": "d\u00e9sactiv\u00e9",
+        "partial": "partiel"
+    },
+    "misc": {
+        "newWindowTitle": "nouvelle fen\u00eatre",
+        "updateNeeded": "Des modifications ont eu lieu depuis votre derni\u00e8re visite, merci de mettre \u00e0 jour votre consentement.",
+        "poweredBy": "Propuls\u00e9 par Orejime"
+    }
+}
