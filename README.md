@@ -1,6 +1,6 @@
 # orejime pour PluXml
 
-Plugin embarquant le gestionnaire de coolie "orejime" v3.0.0 
+Plugin embarquant le gestionnaire de cookie "orejime" v3.0.0 
 https://github.com/boscop-fr/orejime
 
 
@@ -20,6 +20,7 @@ Le gestionnaire de cookie "orejime" utilise Orejime en version 3.0.0 et est char
  
 Vous n'avez pas à toucher aux fichiers du thème, les traceurs sont automatiquement injectés dans la partie `<head>` de votre page.
 
-Vos script ou codes HTML n'ont pas à être modifiés, il suffit de les copier/coller. Ils seront encapsulés dans une balise `<template>` par le plugin du même nom.
+Vos script ou codes HTML n'ont pas à être modifiés, il suffit de les copier/coller dans l'administration. Ils seront encapsulés dans une balise `<template>` .
+Les codes pour les contenus externes à inserer dans vos publications seront à copier/coller aux endroits d'affichages (articles, pages statiques, ... ).
 
 Le script d'initialisation est automatiquement injecté en fin de page en fonction de votre configuration si vous avez au moins une famille configurée.
