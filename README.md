@@ -1,8 +1,11 @@
 # orejime pour PluXml
 
 Plugin embarquant le gestionnaire de coolie "orejime" v3.0.0 
-Le gestionnaire de cookie "orejime" est 
-Orejime en version 3.0.0 est chargé via jsdlvr
+https://github.com/boscop-fr/orejime
+
+
+Le gestionnaire de cookie "orejime" utilise Orejime en version 3.0.0 et est chargé via jsdlvr
+
 **Le plugin ne modifie pas orejime**, en tant qu'interface, il aide à la mise en oeuvre de cet outil en balisant vos scripts et contenus externes, puis en initialisant orejime coté visiteurs, en fonction de votre configuration.
 
 Le plugin vous permet depuis l'administration de votre site PluXml de configurer:
@@ -16,5 +19,7 @@ Le plugin vous permet depuis l'administration de votre site PluXml de configurer
 
  
 Vous n'avez pas à toucher aux fichiers du thème, les traceurs sont automatiquement injectés dans la partie `<head>` de votre page.
+
 Vos script ou codes HTML n'ont pas à être modifiés, il suffit de les copier/coller. Ils seront encapsulés dans une balise `<template>` par le plugin du même nom.
+
 Le script d'initialisation est automatiquement injecté en fin de page en fonction de votre configuration si vous avez au moins une famille configurée.
